@@ -1,13 +1,4 @@
 -- // MADE BY Q1RED
-_G.Key = "TheKings_Tower"
-local userkey = "https://pastebin.com/raw/NpSucfP3"
-local blacklist = "https://pastebin.com/raw/wT0fPLdL"
-local key = game:HttpGet(userkey, true)
-local banned = game:HttpGet(blacklist, true)
-plr = game.Players.LocalPlayer
---f
-if string.find(key, plr.Name) then
-
 -- // Custom Font
 do
 	getsynasset = getcustomasset or getsynasset
