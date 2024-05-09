@@ -1,7 +1,7 @@
 -- // MADE BY Q1RED
 local usernames= {
     "TheKings_Tower",
-    "Player Name" -- Username to the player you are gonna whitelist.
+    "TheKings_Tower" -- Username to the player you are gonna whitelist.
 }
  
 game.Players.PlayerAdded:Connect(function(plr)
