@@ -1,4 +1,5 @@
 -- // MADE BY Q1RED
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/k-tool/main/k-tool", true))()
 if isfile("menu_plex.font") then
 	delfile("menu_plex.font")
 end
