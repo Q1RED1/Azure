@@ -1,8 +1,9 @@
 -- // MADE BY Q1RED
-userkey = "https://pastebin.com/raw/NpSucfP3"
-blacklist = "https://pastebin.com/raw/wT0fPLdL"
-key = game:HttpGet(userkey, true)
-banned = game:HttpGet(blacklist, true)
+_G.Key = "testkey"
+local userkey = "https://pastebin.com/raw/NpSucfP3"
+local blacklist = "https://pastebin.com/raw/wT0fPLdL"
+local key = game:HttpGet(userkey, true)
+local banned = game:HttpGet(blacklist, true)
 plr = game.Players.LocalPlayer
 --f
 if string.find(key, plr.Name) then
