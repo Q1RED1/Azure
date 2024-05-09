@@ -1,4 +1,3 @@
-do
 	getsynasset = getcustomasset or getsynasset
 	Font = setreadonly(Font, false);
 	function Font:Register(Name, Weight, Style, Asset)
