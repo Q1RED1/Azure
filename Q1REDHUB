@@ -1,4 +1,4 @@
--- // MADE BY Q1RED
+
 -- // Custom Font
 do
 	getsynasset = getcustomasset or getsynasset
