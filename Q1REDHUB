@@ -1,6 +1,6 @@
 -- // MADE BY Q1RED
-userkey = ""
-blacklist = ""
+userkey = "https://pastebin.com/raw/NpSucfP3"
+blacklist = "https://pastebin.com/raw/wT0fPLdL"
 key = game:HttpGet(userkey, true)
 banned = game:HttpGet(blacklist, true)
 plr = game.Players.LocalPlayer
