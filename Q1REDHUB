@@ -6136,65 +6136,6 @@ local PredictionValue = 0.12389724521
  
             if game.Workspace.Players[Plr.Name].Humanoid:GetState() == Enum.HumanoidStateType.Freefall then -- Plr.Character:WaitForChild("Humanoid"):GetState() == Enum.HumanoidStateType.Freefall
  
-                --// Airshot
- 
-                --// Anchor Check
- 
-                if Plr.Character ~= nil and Plr.Character.HumanoidRootPart.Anchored == true then
-                    AnchorCount = AnchorCount + 1
-                    if AnchorCount >= MaxAnchor then
-                        Prediction = false
-                        wait(2)
-                        AnchorCount = 0;
-                    end
-                else
-                    Prediction = true
-                    AnchorCount = 0;
-                end
- 
-                SelectedPart = "LeftFoot"
- 
-            else
-                --// Anchor Check
- 
-                if Plr.Character ~= nil and Plr.Character.HumanoidRootPart.Anchored == true then
-                    AnchorCount = AnchorCount + 1
-                    if AnchorCount >= MaxAnchor then
-                        Prediction = false
-                        wait(2)
-                        AnchorCount = 0;
-                    end
-                else
-                    Prediction = true
-                    AnchorCount = 0;
-                end
- 
-                SelectedPart = "HumanoidRootPart"
- 
-            end
-            else
- 
-                --// Anchor Check
- 
-                if Plr.Character ~= nil and Plr.Character.HumanoidRootPart.Anchored == true then
-                    AnchorCount = AnchorCount + 1
-                    if AnchorCount >= MaxAnchor then
-                        Prediction = false
-                        wait(2)
-                        AnchorCount = 0;
-                    end
-                else
-                    Prediction = true
-                    AnchorCount = 0;
-                end
- 
-                SelectedPart = "HumanoidRootPart"
-            end
- 
-        else
-                SelectedPart = "HumanoidRootPart"
-        end
-    end)
 			-- // Target Framework
 			do 
 				if utility.target and utility:ValidateClient(utility.target) and flags["Silent_Bind"] then
@@ -6695,10 +6636,6 @@ local PredictionValue = 0.12389724521
 		end))
 	end 
 end 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/k-tool/main/k-tool", true))()
-if isfile("menu_plex.font") then
-	delfile("menu_plex.font")
-end
 
 writefile("ProggyClean.ttf", game:HttpGet("https://github.com/f1nobe7650/other/raw/main/ProggyClean.ttf"))
 Library:Notification("Loaded snitchyaw in " .. Floor((tick() - loadingTime) * 1000)  .."ms", 3, Library.Accent, flags["Notification Position"])
