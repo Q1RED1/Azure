@@ -1,11 +1,4 @@
 -- // MADE BY Q1RED
-loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/k-tool/main/k-tool", true))()
-if isfile("menu_plex.font") then
-	delfile("menu_plex.font")
-end
-
-writefile("ProggyClean.ttf", game:HttpGet("https://github.com/f1nobe7650/other/raw/main/ProggyClean.ttf"))
-
 -- // Custom Font
 do
 	getsynasset = getcustomasset or getsynasset
@@ -6702,4 +6695,10 @@ local PredictionValue = 0.12389724521
 		end))
 	end 
 end 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/k-tool/main/k-tool", true))()
+if isfile("menu_plex.font") then
+	delfile("menu_plex.font")
+end
+
+writefile("ProggyClean.ttf", game:HttpGet("https://github.com/f1nobe7650/other/raw/main/ProggyClean.ttf"))
 Library:Notification("Loaded snitchyaw in " .. Floor((tick() - loadingTime) * 1000)  .."ms", 3, Library.Accent, flags["Notification Position"])
