@@ -1,19 +1,5 @@
 -- // MADE BY Q1RED
-local usernames= {
-    "TheKings_Tower",
-    "TheKings_Tower" -- Username to the player you are gonna whitelist.
-}
- 
-game.Players.PlayerAdded:Connect(function(plr)
-    for i, v in pairs(usernames) do
-        if v == plr.Name then
-            print("Whitelisted")
-        else
-            print("Not whitelisted")
-            plr:Kick("Not whitelisted") -- Kick message.
-        end
-    end
-end)
+
 
 -- // Custom Font
 do
