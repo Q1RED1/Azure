@@ -1,4 +1,4 @@
---credits to finobe
+
 
 if isfile("menu_plex.font") then
 	delfile("menu_plex.font")
@@ -6386,79 +6386,3 @@ do
 end 
 
 Library:Notification("Loaded snitchyaw in " .. Floor((tick() - loadingTime) * 1000)  .."ms", 3, Library.Accent, flags["Notification Position"])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
---[[
-
-NICE TRY POORON >_< :3333
-
-]]
