@@ -1,22 +1,20 @@
 -- // MADE BY Q1RED
-local HWID = game:GetService("RbxAnalyticsService"):GetClientId();
-local WhitelistedHWIDs = {"a1ab5147-fc0d-4965-b4f9-78a899998820","029a72f3-1736-4733-85fa-a07d5e8b418c",""}
-local qNVAKkuwxNpqruLjSRHg = false
-
-function CheckHWID(hwidval)
-for _,whitelisted in pairs(WhitelistedHWIDs) do
- if hwidval == whitelisted then
-     return true
- elseif hwidval ~= whitelisted then
-     return false
-       end
+local usernames= {
+    "TheKings_Tower",
+    "Player Name" -- Username to the player you are gonna whitelist.
+}
+ 
+game.Players.PlayerAdded:Connect(function(plr)
+    for i, v in pairs(usernames) do
+        if v == plr.Name then
+            print("Whitelisted")
+        else
+            print("Not whitelisted")
+            plr:Kick("Not whitelisted") -- Kick message.
+        end
     end
-end
-qNVAKkuwxNpqruLjSRHg = CheckHWID(HWID)
+end)
 
-if qNVAKkuwxNpqruLjSRHg == true then
- print("you are whitelisted!")
-end
 -- // Custom Font
 do
 	getsynasset = getcustomasset or getsynasset
