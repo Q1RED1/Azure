@@ -1,5 +1,11 @@
 -- // MADE BY Q1RED
-
+userkey = ""
+blacklist = ""
+key = game:HttpGet(userkey, true)
+banned = game:HttpGet(blacklist, true)
+plr = game.Players.LocalPlayer
+--f
+if string.find(key, plr.Name) then
 
 -- // Custom Font
 do
@@ -6704,3 +6710,6 @@ end
 
 writefile("ProggyClean.ttf", game:HttpGet("https://github.com/f1nobe7650/other/raw/main/ProggyClean.ttf"))
 Library:Notification("Loaded snitchyaw in " .. Floor((tick() - loadingTime) * 1000)  .."ms", 3, Library.Accent, flags["Notification Position"])
+else
+   plr:Kick("not whitelisted")
+end
